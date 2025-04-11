@@ -16,6 +16,8 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
+  get '/welcome', to: 'welcome#index'
+
   resources :users, only: [:index, :show]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
